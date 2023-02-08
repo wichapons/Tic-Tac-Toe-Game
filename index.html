@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200;300&family=Raleway:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 <body>
-    <header>
-        <h1>Hello world!</h1>
+    <header id="main-header">
+        <h1>Hello world! Tic Tac Toe</h1>
         <p>Built by Topazio using Javascript</p>
     </header>
     <main>
@@ -21,8 +26,9 @@
                     <input type="text" name="username" id="playername">
                 </div>
                 <div>
-                     <button type="button">Cancel</button> <!-- type button = not send the form -->
-                    <button type="submit">Confirm</button>
+                     <button class="btn-main" type="submit">Confirm</button>
+                     <button class="btn-alt" type="button">Cancel</button> <!-- type button = not send the form -->
+                    
                 </div>
             </form>
         </div>
@@ -33,16 +39,16 @@
                     <h2>Player 1</h2>
                     <h3>playerName</h3>
                     <h4>X</h4>
-                    <button>Edit</button>
+                    <button class="btn-main">Edit</button>
                 </li>
                 <li>
                     <h2>Player 2</h2>
                     <h3>playerName</h3>
                     <h4>O</h4>
-                    <button>Edit</button>
+                    <button class="btn-main">Edit</button>
                 </li>
             </ol>
-            <button id="start-game-btn">Start New Game</button>
+            <button class="btn-main" id="start-game-btn">Start New Game</button>
         </section>
 
         <section id="active-game">

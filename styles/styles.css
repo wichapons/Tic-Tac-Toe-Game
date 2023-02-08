@@ -1,0 +1,43 @@
+body{
+    /* font-family: 'Mali', cursive; */
+    font-family: 'Raleway', sans-serif;
+    margin:0;
+    background-color:antiquewhite;
+}
+
+#main-header{
+    background-color: rgb(41, 113, 248);
+    color:honeydew;
+    text-align: center;
+    margin:0;
+    padding: 1.5rem
+}
+
+.btn-main{
+    font: inherit;
+    color: antiquewhite;
+    padding: 0.5rem 0.8rem;
+    background-color:dodgerblue;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-alt{
+    font: inherit;
+    padding: 0.5rem 0.8rem;
+    background-color:crimson;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+.btn-main:hover{
+    background-color: rgb(115, 208, 254);
+    color: black;
+}
+.btn-alt:hover{
+    background-color: rgb(232, 100, 91);
+    color: black;
+}
