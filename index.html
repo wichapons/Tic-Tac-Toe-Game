@@ -12,6 +12,21 @@
         <p>Built by Topazio using Javascript</p>
     </header>
     <main>
+        <!-- overlay ui -->
+        <div> 
+            <h2>Choose your name!</h2>
+            <form action="">
+                <div>
+                    <label for="">playername</label>
+                    <input type="text" name="username" id="playername">
+                </div>
+                <div>
+                     <button type="button">Cancel</button> <!-- type button = not send the form -->
+                    <button type="submit">Confirm</button>
+                </div>
+            </form>
+        </div>
+
         <section id="game-config">
             <ol>
                 <li>
@@ -29,8 +44,26 @@
             </ol>
             <button id="start-game-btn">Start New Game</button>
         </section>
-        <section id="active-game">
 
+        <section id="active-game">
+            <div>
+                <h2>You won!,<span>PLAYER Name</span></h2>
+                <p>click to start new game</p>
+            </div>
+            <p>it's your turn <span id="active-username">PlayerName</span></p>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
         </section>
     </main>
 </body>
