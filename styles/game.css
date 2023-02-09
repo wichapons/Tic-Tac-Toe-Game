@@ -1,0 +1,46 @@
+#active-game{
+    margin:0;
+    /* display: none; */
+    text-align: center;
+}
+
+#game-over{
+    font-size: 1.5rem;
+    background-color:rgba(0, 61, 174, 0.9) ;
+    width: 70%;
+    color: antiquewhite;
+    margin: auto;
+    /* display: none; */
+    margin: 1rem auto;
+    padding: 0.1rem 0;
+}
+
+#game-over h2{
+    font-size: 3rem;
+}
+
+#active-username{
+    font-weight: bold;
+    font-size: 1.2rem
+}
+
+#game-window{
+    display: grid;
+    list-style: none;
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    justify-content: center;
+}
+
+#game-window li{
+    background-color: rgba(174, 224, 240,0.5);
+    display: flex;
+    font-size: 3.3rem;
+    margin:0.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#game-window li:hover{
+    background-color: rgba(9, 9, 203, 0.7);
+}

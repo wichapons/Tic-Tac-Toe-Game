@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200;300&family=Raleway:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/overlay.css">
+    <link rel="stylesheet" href="styles/config.css">
+    <link rel="stylesheet" href="styles/game.css">
 
 </head>
 <body>
@@ -19,12 +21,13 @@
         <p>Built by Topazio using Javascript</p>
     </header>
     <main>
+
         <!-- overlay ui -->
-        <div class="overlay"> 
+        <div class="overlay" id="overlay-config"> 
             <h2>Choose your name!</h2>
             <form action="">
-                <div>
-                    <label for="">playername</label>
+                <div class="playerName">
+                    <label for="">Player Name</label>
                     <input type="text" name="username" id="playername">
                 </div>
                 <div>
@@ -40,13 +43,13 @@
                 <li>
                     <h2>Player 1</h2>
                     <h3>playerName</h3>
-                    <h4>X</h4>
+                    <h4 class="symbol">X</h4>
                     <button class="btn-main">Edit</button>
                 </li>
                 <li>
                     <h2>Player 2</h2>
                     <h3>playerName</h3>
-                    <h4>O</h4>
+                    <h4 class="symbol">O</h4>
                     <button class="btn-main">Edit</button>
                 </li>
             </ol>
@@ -54,15 +57,15 @@
         </section>
 
         <section id="active-game">
-            <div>
-                <h2>You won!,<span>PLAYER Name</span></h2>
+            <div id="game-over">
+                <h2>You won!,<span id="winner">PLAYER Name</span></h2>
                 <p>click to start new game</p>
             </div>
             <p>it's your turn <span id="active-username">PlayerName</span></p>
-            <ol>
+            <ol id="game-window">
+                <li>x</li>
                 <li></li>
-                <li></li>
-                <li></li>
+                <li>x</li>
 
                 <li></li>
                 <li></li>
