@@ -39,8 +39,15 @@
     margin:0.2rem;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
 }
 
 #game-window li:hover{
     background-color: rgba(9, 9, 203, 0.7);
 }
+
+#game-window li.disabled-btn{
+    background-color: rgba(9, 9, 203, 0.7);
+    cursor: default;
+    color: white;
+}   
