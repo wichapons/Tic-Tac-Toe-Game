@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="styles/overlay.css">
     <link rel="stylesheet" href="styles/config.css">
     <link rel="stylesheet" href="styles/game.css">
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/game.js" defer></script>
+    <script src="scripts/app.js" defer></script>
 
 </head>
 <body>
@@ -30,7 +33,7 @@
                     <label for="">Player Name</label>
                     <input type="text" name="username" id="playername">
                 </div>
-                <div>
+                <div >
                      <button class="btn-main" type="submit">Confirm</button>
                      <button class="btn-alt" type="button">Cancel</button> <!-- type button = not send the form -->
                     
@@ -44,16 +47,16 @@
                     <h2>Player 1</h2>
                     <h3>playerName</h3>
                     <h4 class="symbol">X</h4>
-                    <button class="btn-main">Edit</button>
+                    <button class="btn-main" id="edit-player1-btn">Edit</button>
                 </li>
                 <li>
                     <h2>Player 2</h2>
                     <h3>playerName</h3>
                     <h4 class="symbol">O</h4>
-                    <button class="btn-main">Edit</button>
+                    <button class="btn-main" id="edit-player2-btn">Edit</button>
                 </li>
             </ol>
-            <button class="btn-main" id="start-game-btn">Start New Game</button>
+            <button class="btn-main" id="start-game-btn" >Start New Game</button>
         </section>
 
         <section id="active-game">
