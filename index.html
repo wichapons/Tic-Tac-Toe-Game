@@ -28,15 +28,15 @@
         <!-- overlay ui -->
         <div class="overlay" id="overlay-config"> 
             <h2>Choose your name!</h2>
-            <form action="">
+            <form action="" >
                 <div class="playerName">
                     <label for="">Player Name</label>
-                    <input type="text" name="username" id="playername">
+                    <input type="text" name="username" id="playername" required>
+                    <span id="enter-name-warning"></span>
                 </div>
                 <div >
                      <button class="btn-main" type="submit">Confirm</button>
                      <button class="btn-alt" type="button">Cancel</button> <!-- type button = not send the form -->
-                    
                 </div>
             </form>
         </div>
@@ -47,13 +47,13 @@
                     <h2>Player 1</h2>
                     <h3>playerName</h3>
                     <h4 class="symbol">X</h4>
-                    <button class="btn-main" id="edit-player1-btn">Edit</button>
+                    <button class="btn-main" id="edit-player1-btn" data-playerNum="1">Edit</button> 
                 </li>
                 <li>
                     <h2>Player 2</h2>
                     <h3>playerName</h3>
                     <h4 class="symbol">O</h4>
-                    <button class="btn-main" id="edit-player2-btn">Edit</button>
+                    <button class="btn-main" id="edit-player2-btn" data-playerNum="2">Edit</button>
                 </li>
             </ol>
             <button class="btn-main" id="start-game-btn" >Start New Game</button>

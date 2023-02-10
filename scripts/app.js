@@ -1,5 +1,5 @@
 
-//edit button
+//edit button on main page
 const editPlayer1Btn = document.querySelector('#edit-player1-btn');
 const editPlayer2Btn = document.querySelector('#edit-player2-btn');
 console.log(editPlayer1Btn);
@@ -8,9 +8,16 @@ console.log(editPlayer1Btn);
 const playerOverlay = document.querySelector('#overlay-config');
 const backdropElement = document.querySelector('#backdrop');
 const cancelBtn = document.querySelector('#overlay-config .btn-alt');
-console.log(cancelBtn);
+const inputFormElement = document.querySelector('.overlay form');
+//inputwarning
+const inputWarning =  document.querySelector('#enter-name-warning');
 
-
+//event listener//
+//edit button 
 editPlayer1Btn.addEventListener('click',playerConfig);
 editPlayer2Btn.addEventListener('click',playerConfig);
-cancelBtn.addEventListener('click',cancelBtnConfig)
+//cancel button 
+cancelBtn.addEventListener('click',closeOverlay);
+//input player name 
+inputFormElement.addEventListener('submit',savePlayerName)
+
