@@ -15,9 +15,7 @@ const inputWarning =  document.querySelector('#enter-name-warning');
 //playerNameElement on main page
 const player1NameElement = document.querySelector('#game-config .player1');
 const player2NameElement = document.querySelector('#game-config .player2');
-//playerNameElement on overlay
-//const player1NameOverlayElement = document.querySelector('overlay-config .player1');
-//const player2NameOverlayElement = document.querySelector('overlay-config .player1');
+
 
 //event listener//
 //edit button 
