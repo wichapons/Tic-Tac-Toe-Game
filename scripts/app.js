@@ -1,4 +1,14 @@
 let currentEditplayerID = 0;
+const playersDetails =[
+    {
+        name:'',
+        symbol:'X'
+    },{
+        name:'',
+        symbol:'O'
+    }
+];
+
 
 //edit button on main page
 const editPlayer1Btn = document.querySelector('#edit-player1-btn');
@@ -12,6 +22,9 @@ const cancelBtn = document.querySelector('#overlay-config .btn-alt');
 const inputFormElement = document.querySelector('.overlay form');
 //inputwarning
 const inputWarning =  document.querySelector('#enter-name-warning');
+//playername in input
+const playernameInputElement = document.querySelector("#playername")
+
 //playerNameElement on main page
 const player1NameElement = document.querySelector('#game-config .player1');
 const player2NameElement = document.querySelector('#game-config .player2');
