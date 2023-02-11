@@ -1,6 +1,6 @@
 #active-game{
     margin:0;
-    /* display: none; */
+    display: none;
     text-align: center;
 }
 
@@ -10,7 +10,7 @@
     width: 70%;
     color: antiquewhite;
     margin: auto;
-    /* display: none; */
+    display: none;
     margin: 1rem auto;
     padding: 0.1rem 0;
 }

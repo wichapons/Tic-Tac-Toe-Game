@@ -29,7 +29,7 @@ function savePlayerName(event){
             player1NameElement.textContent = inputPlayerName;
             playersDetails[0].name = inputPlayerName;
             playernameInputElement.value = ''; //clear text in the input overlay after click confirm
-            closeOverlay()
+            closeOverlay();
         } 
         if (currentEditplayerID === 2){
             player2NameElement.textContent = inputPlayerName;

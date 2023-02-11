@@ -1,6 +1,6 @@
 let currentEditplayerID = 0;
 const playersDetails =[
-    {
+{
         name:'',
         symbol:'X'
     },{
@@ -24,13 +24,15 @@ const inputFormElement = document.querySelector('.overlay form');
 const inputWarning =  document.querySelector('#enter-name-warning');
 //playername in input
 const playernameInputElement = document.querySelector("#playername")
-
 //playerNameElement on main page
 const player1NameElement = document.querySelector('#game-config .player1');
 const player2NameElement = document.querySelector('#game-config .player2');
+//For Game logic element
+const startGameButtonElement = document.querySelector('#start-game-btn');
+const activeGameElement = document.querySelector('#active-game');
 
 
-//event listener//
+
 //edit button 
 editPlayer1Btn.addEventListener('click',playerConfig);
 editPlayer2Btn.addEventListener('click',playerConfig);
@@ -38,4 +40,7 @@ editPlayer2Btn.addEventListener('click',playerConfig);
 cancelBtn.addEventListener('click',closeOverlay);
 //input player name 
 inputFormElement.addEventListener('submit',savePlayerName)
+//Start Game Button
+startGameButtonElement.addEventListener('click',startNewGame)
+
 
