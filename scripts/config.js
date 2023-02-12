@@ -2,7 +2,6 @@
 function playerConfig(event){
     console.log(event.target);
     const validatedPlayerId = parseInt(event.target.dataset.playerid); //if dataset has dash(-) like player-num => dataset['playernum'] because cannot access to object with dash with dot command
-    
     currentEditplayerID = validatedPlayerId;
     playerOverlay.style.display='block';
     backdropElement.style.display='block';
@@ -17,7 +16,6 @@ function closeOverlay(){
 
 function savePlayerName(event){
     event.preventDefault();
-
     const inputPlayerName = document.querySelector("#playername").value.trim(); // '      top lop    '  => 'top lop'
     console.log(currentEditplayerID);
 

@@ -1,4 +1,5 @@
 let currentEditplayerID = 0;
+let currentPlayer = 0;
 const playersDetails =[
 {
         name:'',
@@ -27,11 +28,12 @@ const playernameInputElement = document.querySelector("#playername")
 //playerNameElement on main page
 const player1NameElement = document.querySelector('#game-config .player1');
 const player2NameElement = document.querySelector('#game-config .player2');
+
 //For Game logic element
 const startGameButtonElement = document.querySelector('#start-game-btn');
 const activeGameElement = document.querySelector('#active-game');
-
-
+const selectAllGameFieldElement = document.querySelectorAll('#game-window li');
+const currentPlayerDisplayElement = document.querySelector('#active-username')
 
 //edit button 
 editPlayer1Btn.addEventListener('click',playerConfig);
@@ -43,4 +45,9 @@ inputFormElement.addEventListener('submit',savePlayerName)
 //Start Game Button
 startGameButtonElement.addEventListener('click',startNewGame)
 
+
+//
+for (const gameFieldElement of selectAllGameFieldElement ){ //use loop for adding eventlistener to each li element
+    gameFieldElement.addEventListener('click',gameField);
+}
 
