@@ -14,7 +14,7 @@ const data= [
     [0,0,0],
     [0,0,0],
     [0,0,0]
-]
+];
 
 
 //edit button on main page
