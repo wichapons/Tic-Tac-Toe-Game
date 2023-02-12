@@ -1,5 +1,7 @@
 let currentEditplayerID = 0;
 let currentPlayer = 0;
+let roundCount = 0;
+let isGameOver = false;
 const playersDetails =[
 {
         name:'',
@@ -41,7 +43,8 @@ const activeGameElement = document.querySelector('#active-game');
 const selectAllGameFieldElement = document.querySelectorAll('#game-window li');
 const currentPlayerDisplayElement = document.querySelector('#active-username');
 const gameOverElement = document.querySelector('#game-over');
-const winnerName = document.querySelector('#winner')
+const winnerName = document.querySelector('#winner');
+const drawElement = document.querySelector('#game-over h2');
 
 //edit button 
 editPlayer1Btn.addEventListener('click',playerConfig);
