@@ -10,6 +10,12 @@ const playersDetails =[
     }
 ];
 
+const data= [
+    [0,0,0],
+    [0,0,0],
+    [0,0,0]
+]
+
 
 //edit button on main page
 const editPlayer1Btn = document.querySelector('#edit-player1-btn');
