@@ -39,7 +39,9 @@ const player2NameElement = document.querySelector('#game-config .player2');
 const startGameButtonElement = document.querySelector('#start-game-btn');
 const activeGameElement = document.querySelector('#active-game');
 const selectAllGameFieldElement = document.querySelectorAll('#game-window li');
-const currentPlayerDisplayElement = document.querySelector('#active-username')
+const currentPlayerDisplayElement = document.querySelector('#active-username');
+const gameOverElement = document.querySelector('#game-over');
+const winnerName = document.querySelector('#winner')
 
 //edit button 
 editPlayer1Btn.addEventListener('click',playerConfig);
